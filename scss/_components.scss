@@ -1,0 +1,45 @@
+.btn-large{
+    background-color: $grayInput;
+    padding: 0.75rem;
+    border-radius: 5px;
+    &:hover{
+        outline: 1px black solid;
+    &:focus{
+        outline: 2px black solid;
+    }
+    }
+}
+
+.btn-medium{
+    background-color: $grayInput;
+    padding: 0.25rem;
+    border-radius: 5px;
+    &:hover{
+        outline: 1px black solid;
+    &:focus{
+        outline: 2px black solid;
+    }
+    }
+}
+
+.passenger-seat-list{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+    .pas-list-row{
+        display: flex;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid black;
+        align-items: center;
+        & > span:first-child {
+            flex: 2;
+            border-right: 1px solid black;
+        }
+        & > span:last-child {
+            flex: 1;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "components.scss";
+@import "module-search.scss";
+@import "module-results.scss";
+@import "module-seats.scss";
+html{
+    font-family: 'Titillium Web', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.input-style-text{
+    border: 1px solid black;
+}
+.passengers-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    .passenger-form{
+        border: 1px solid black;
+        border-top: none;
+        display: flex;
+        flex-direction: column;
+        .passenger-title{
+            flex: 1;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            padding: 1rem 1rem;
+            font-size: 1.2rem;
+        }
+        form{
+            flex: 1;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
+    }
+}
+.comp-pas-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .pas-info-section{
+        padding: 1.5rem;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+    }
+    .pas-info-head{
+        font-size: 1.25rem;
+        justify-content: space-between;
+    }
+    .pas-info-body{
+        border-top: none;
+        gap: 2rem;
+    }
+    
+}
+

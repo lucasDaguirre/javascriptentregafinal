@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    <link rel="shortcut icon" href="#">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900" rel="stylesheet" />
+</head>
+<body>
+    <div class="hero-wrap">
+       <header>
+           <nav>
+               <div class="nav-logo nav-item">
+                    <span class="material-symbols-outlined">
+                    airlines
+                    </span>
+                   <span>Aerolineas</span>
+               </div>
+               <div class="nav-menu nav-item">
+                <ul>
+                    <a href="#">
+                        <li>Inicio</li>
+                    </a>
+                    <a href="#">
+                        <li>Check In</li>
+                    </a>
+                    <a href="#">
+                        <li>Buscar Vuelos</li>
+                    </a>
+                    <a href="#">
+                        <li>Destinos</li>
+                    </a>
+                    <a href="#">
+                        <li>La Empresa</li>
+                    </a>
+                </ul>
+                </div>
+               <div class="nav-login nav-item">
+                   <span>Ingresar</span>
+               </div>
+           </nav>
+       </header>
+        <div class="container">
+            <div class="form-container" id="form-container">
+                <form id="form-searchFlight" class="form-searchFlight"">
+                    <div class="searchFlight-radio">
+                        <div class="radio-container">
+                            <div class="radio-wrap">
+                                <input type="radio" id="radio-oneway" name="get-trip" value="oneway">
+                                <label for="radio-oneway">Sólo ida</label>
+                            </div>
+                            <div class="radio-wrap">
+                                <input type="radio" id="radio-return" name="get-trip" value="return" checked="checked">
+                                <label for="radio-return">Ida y Vuelta</label>   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="searchFlight-cities">
+                        <div class="input-container">
+                            <div id="input-area-from" class="input-area">
+                                <label class="input-label" for="input-from">Origen:</label>
+                                <input id="input-from" class="input-box" list="list-from" name="input-from">
+                                <datalist id="list-from">
+                                </datalist>
+                            </div>
+                            <div id="error-from" class="error-label">
+                                <p>Por favor ingrese el origen</p>  
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <div id="input-area-to" class="input-area">
+                                <label class="input-label" for="input-to">Destino:</label>
+                                <input id="input-to" class="input-box" list="list-to" name="input-to">
+                                <datalist id="list-to">
+                                </datalist>
+                            </div>
+                            <div id="error-to" class="error-label">
+                                <p>Por favor ingrese el destino</p>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="searchFlight-dates">
+                        <div class="input-container">
+                            <div id="input-area-depart" class="input-area">
+                                <label class="input-label" for="input-depart">Partida:</label>
+                                <input type="date" id="input-depart" class="input-box"" name="input-depart">
+                            </div>
+                            <div id="error-depart" class="error-label">
+                                <p>Por favor ingrese la fecha de partida</p>  
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <div id="input-area-return" class="input-area">
+                                <label class="input-label" for="input-return">Regreso:</label>
+                                <input type="date" id="input-return" class="input-box" name="input-return">
+                            </div>
+                            <div id="error-return" class="error-label">
+                                <p>Por favor ingrese la fecha de regreso</p>  
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <div class="input-area">
+                                <label class="input-label" for="input-passengers">Pasajeros</label>
+                                <select id="input-adults" class="input-box" name="input-adults">
+                                    <option value="1">1 Adulto</option>
+                                    <option value="2">2 Adultos</option>
+                                    <option value="3">3 Adultos</option>
+                                    <option value="4">4 Adultos</option>
+                                    <option value="5">5 Adultos</option>
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="searchFlight-submit">
+                        <div class="input-container">
+                            <button type="submit" class="btn-large btn-submit" id="submit-flight"">Buscar Vuelo</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="js/appFinder.js"></script>
+</body>
+</html>
+

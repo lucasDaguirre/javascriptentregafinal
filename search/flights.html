@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="#">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo nav-item">
+                 <span class="material-symbols-outlined">
+                 airlines
+                 </span>
+                <span>Aerolineas</span>
+            </div>
+            <div class="nav-menu nav-item">
+             <ul>
+                 <a href="#">
+                     <li>Inicio</li>
+                 </a>
+                 <a href="#">
+                     <li>Check In</li>
+                 </a>
+                 <a href="#">
+                     <li>Buscar Vuelos</li>
+                 </a>
+                 <a href="#">
+                     <li>Destinos</li>
+                 </a>
+                 <a href="#">
+                     <li>La Empresa</li>
+                 </a>
+             </ul>
+             </div>
+            <div class="nav-login nav-item">
+                <span>Ingresar</span>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="result-container" id="result-container">
+            <div class="result-wrapper">
+                <div class="result-main">
+                    <div class="result-top">
+                        <div class="top-outbound top-bound">
+                            <span>DESDE</span>
+                            <span class="material-symbols-outlined">
+                                flight_takeoff
+                                </span>
+                        </div>
+                        <div class="top-center">
+                            <hr>
+                            <span id="span-duration">
+                            </span>
+                            <hr>
+                        </div>
+                        <div class="top-inbound top-bound">
+                            <span class="material-symbols-outlined">
+                                flight_land
+                                </span>
+                            <span>HASTA</span>
+                        </div>
+                    </div>
+                    <div class="result-body">
+                        <div class="result-bound">
+                            <div class="result-city">
+                                <span id="span-citycode-outbound" class="span-citycode"></span>
+                                <span id="span-city-outbound" class="span-city"></span>
+                                <span id="span-airport-outbound" class="span-airport"></span>
+                            </div>
+                            <div class="result-time">
+                                <span id="date-time-outbound" class="span-time"></span>
+                                <span id="date-full-outbound" class="span-date"></span>
+                            </div>
+                        </div>
+                        <div class="result-center"></div>
+                        <div class="result-bound">
+                            <div class="result-city result-city-inbound">
+                                <span id="span-citycode-inbound" class="span-citycode"></span>
+                                <span id="span-city-inbound" class="span-city"></span>
+                                <span id="span-airport-inbound" class="span-airport"></span>
+                            </div>
+                            <div class="result-time result-time-inbound">
+                                <span id="date-time-inbound" class="span-time"></span>
+                                <span id="date-full-inbound" class="span-date"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-side">
+                    <div class="side-flight">
+                        <div class="flight-logo">
+                            <span class="material-symbols-outlined">
+                                flight
+                                </span>
+                        </div>
+                        <div class="flight-info">
+                            <span class="flight-title">FLIGHT NUMBER</span>
+                            <span id="span-flight" class="flight-number">AR5227</span>
+                        </div>
+                    </div>
+                    <div class="side-price">
+                        <span class="price-title">Precio por pasajero</span>
+                        <span id="span-price" class="price-value"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="comp_pasInfo" class="comp-pas-info">
+            <div id="pas-info-1" class="pas-info">
+                <div id="pas-head-1" class="pas-info-head pas-info-section">
+                    <div class="pas-head-text">
+                        <span class="pas-head-title">Pasajero 1</span>
+                        <span class="pas-head-name"></span>
+                    </div>
+                    <div class="pas-head-button">
+                        <span class="material-symbols-outlined">
+                            check_circle
+                            </span>
+                    </div>
+                </div>
+                <form id="pas-form-1" class="pas-info-body pas-info-section">
+                    <div class="pas-input-wrap">
+                        <label for="pas-nam">Nombres</label>
+                        <input id="pas-nam" class="input-style-text" type="text" name="pas-nam">
+                    </div>
+                    <div class="pas-input-wrap">
+                        <label for="pas-sur">Apellido</label>
+                        <input id="pas-sur" class="input-style-text" type="text" name="pas-sur">
+                    </div>
+                    <div class="pas-input-wrap">
+                        <label for="pas-sex">Sexo</label>
+                        <select id="pas-sex" class="input-style-text" name="pas-sex">
+                            <option value="male">Masculino</option>
+                            <option value="female">Femenino</option>
+                            <option value="other">Otro</option>
+                        </select>
+                    </div>
+                    <div class="pas-input-wrap">
+                        <button id="pas-sub" class="input-style-text" type="submit" name="pas-sub">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <button class="btn-large" id="submit-pas" type="submit">Continuar</button>
+    </div>
+    <script src="../node_modules/moment/moment.js"></script>
+    <script src="../js/cities.js"></script>
+    <script src="../js/appResult.js"></script>
+</body>
+</html>

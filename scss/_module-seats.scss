@@ -1,0 +1,104 @@
+.page-container{
+    display: flex;
+    padding-top: 5rem;
+    justify-content: center;
+    gap: 10rem;
+    .passenger-wrap{
+        display: flex;
+        justify-content: center;
+        .passenger-container{
+            .passenger-card{
+                padding: 1rem 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid black;
+                width: 20rem;
+                gap: 1rem;
+                .seat-submit{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    .seat-wrap{
+        display: flex;
+        justify-content: center;
+        .seat-container{
+            width: fit-content;
+            .seat-row{
+                display: flex;
+                padding: 1rem 2rem;
+                justify-content: space-between;
+                gap: 1rem;
+                .seat-row-number{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: rgb(153, 153, 153);
+                    width: 1rem;
+                }
+                .seat-section{
+                    display: flex;
+                    flex: 1;
+                    justify-content: space-around;
+                    gap: 0.5rem;
+                    .seat{
+                        height: 2rem;
+                        width: 2rem;
+                        text-align: center;
+                        line-height: calc(2rem - 5px);
+                        outline: 1px solid black;
+                        border-radius: 7px 7px 0 0;
+                        font-size: 1rem;
+                        border-bottom: 5px solid rgb(75, 75, 75);
+                        &:hover{
+                            cursor: pointer;
+                            background-color: rgb(224, 224, 224);
+                        }
+                    }
+                    .seat-selected{
+                        background-color: rgb(83, 190, 83);
+                    }
+                    .seat-confirmed{
+                        background-color: rgb(50, 53, 255);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .seat-wrap{ 
+    height : 50rem;
+    border: none;
+    ::-webkit-scrollbar {
+        width: 0;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+    }
+
+    .seat-container
+    { height     : 80%;
+      overflow-y : scroll;
+      border: none;
+    }
+
+
+
+}
+
+.seat{
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    line-height: calc(2rem - 5px);
+    outline: 1px solid black;
+    border-radius: 7px 7px 0 0;
+    font-size: 0.75rem;
+    border-bottom: 5px solid rgb(75, 75, 75);
+    padding: 0.25rem;
+}
